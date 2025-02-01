@@ -26,12 +26,85 @@ export default defineConfig({
       },
       {
         text: 'Apps',
-        link: '/apps/deepl/actions',
+        link: '/apps/airtable/connection',
         activeMatch: '/apps/',
       },
     ],
     sidebar: {
       '/apps/': [
+        {
+          text: 'Airtable',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/airtable/actions' },
+            { text: 'Connection', link: '/apps/airtable/connection' },
+          ],
+        },
+        {
+          text: 'Anthropic',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/anthropic/actions' },
+            { text: 'Connection', link: '/apps/anthropic/connection' },
+          ],
+        },
+        {
+          text: 'Appwrite',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/appwrite/triggers' },
+            { text: 'Connection', link: '/apps/appwrite/connection' },
+          ],
+        },
+        {
+          text: 'Brave Search',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/brave-search/actions' },
+            { text: 'Connection', link: '/apps/brave-search/connection' },
+          ],
+        },
+        {
+          text: 'Carbone',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/carbone/actions' },
+            { text: 'Connection', link: '/apps/carbone/connection' },
+          ],
+        },
+        {
+          text: 'ClickUp',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/clickup/actions' },
+            { text: 'Triggers', link: '/apps/clickup/triggers' },
+            { text: 'Connection', link: '/apps/clickup/connection' },
+          ],
+        },
+        {
+          text: 'Cryptography',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/cryptography/actions' },
+            { text: 'Connection', link: '/apps/cryptography/connection' },
+          ],
+        },
+        {
+          text: 'Datastore',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/datastore/actions' },
+            { text: 'Connection', link: '/apps/datastore/connection' },
+          ],
+        },
         {
           text: 'DeepL',
           collapsible: true,
@@ -57,6 +130,15 @@ export default defineConfig({
           items: [
             { text: 'Actions', link: '/apps/discord/actions' },
             { text: 'Connection', link: '/apps/discord/connection' },
+          ],
+        },
+        {
+          text: 'Disqus',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/disqus/triggers' },
+            { text: 'Connection', link: '/apps/disqus/connection' },
           ],
         },
         {
@@ -96,6 +178,24 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Freescout',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/freescout/triggers' },
+            { text: 'Connection', link: '/apps/freescout/connection' },
+          ],
+        },
+        {
+          text: 'Ghost',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/ghost/triggers' },
+            { text: 'Connection', link: '/apps/ghost/connection' },
+          ],
+        },
+        {
           text: 'GitHub',
           collapsible: true,
           collapsed: true,
@@ -112,6 +212,15 @@ export default defineConfig({
           items: [
             { text: 'Triggers', link: '/apps/gitlab/triggers' },
             { text: 'Connection', link: '/apps/gitlab/connection' },
+          ],
+        },
+        {
+          text: 'Google Calendar',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/google-calendar/triggers' },
+            { text: 'Connection', link: '/apps/google-calendar/connection' },
           ],
         },
         {
@@ -143,6 +252,16 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Google Tasks',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/google-tasks/triggers' },
+            { text: 'Actions', link: '/apps/google-tasks/actions' },
+            { text: 'Connection', link: '/apps/google-tasks/connection' },
+          ],
+        },
+        {
           text: 'HTTP Request',
           collapsible: true,
           collapsed: true,
@@ -161,12 +280,64 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Invoice Ninja',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/invoice-ninja/triggers' },
+            { text: 'Actions', link: '/apps/invoice-ninja/actions' },
+            { text: 'Connection', link: '/apps/invoice-ninja/connection' },
+          ],
+        },
+        {
+          text: 'Jotform',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/jotform/triggers' },
+            { text: 'Connection', link: '/apps/jotform/connection' },
+          ],
+        },
+        {
+          text: 'Mailchimp',
+          collapsible: true,
+          collapsed: true,
+          items: [{ text: 'Connection', link: '/apps/mailchimp/connection' }],
+        },
+        {
+          text: 'MailerLite',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/mailerlite/triggers' },
+            { text: 'Connection', link: '/apps/mailerlite/connection' },
+          ],
+        },
+        {
           text: 'Mattermost',
           collapsible: true,
           collapsed: true,
           items: [
             { text: 'Actions', link: '/apps/mattermost/actions' },
             { text: 'Connection', link: '/apps/mattermost/connection' },
+          ],
+        },
+        {
+          text: 'Miro',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/miro/actions' },
+            { text: 'Connection', link: '/apps/miro/connection' },
+          ],
+        },
+        {
+          text: 'Mistral AI',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/mistral-ai/actions' },
+            { text: 'Connection', link: '/apps/mistral-ai/connection' },
           ],
         },
         {
@@ -207,12 +378,77 @@ export default defineConfig({
           ],
         },
         {
+          text: 'OpenRouter',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/openrouter/actions' },
+            { text: 'Connection', link: '/apps/openrouter/connection' },
+          ],
+        },
+        {
+          text: 'Perplexity',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/perplexity/actions' },
+            { text: 'Connection', link: '/apps/perplexity/connection' },
+          ],
+        },
+        {
+          text: 'Pipedrive',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/pipedrive/triggers' },
+            { text: 'Actions', link: '/apps/pipedrive/actions' },
+            { text: 'Connection', link: '/apps/pipedrive/connection' },
+          ],
+        },
+        {
+          text: 'Placetel',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/placetel/triggers' },
+            { text: 'Connection', link: '/apps/placetel/connection' },
+          ],
+        },
+        {
           text: 'PostgreSQL',
           collapsible: true,
           collapsed: true,
           items: [
             { text: 'Actions', link: '/apps/postgresql/actions' },
             { text: 'Connection', link: '/apps/postgresql/connection' },
+          ],
+        },
+        {
+          text: 'Pushover',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/pushover/actions' },
+            { text: 'Connection', link: '/apps/pushover/connection' },
+          ],
+        },
+        {
+          text: 'Reddit',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/reddit/triggers' },
+            { text: 'Actions', link: '/apps/reddit/actions' },
+            { text: 'Connection', link: '/apps/reddit/connection' },
+          ],
+        },
+        {
+          text: 'Remove.bg',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/removebg/actions' },
+            { text: 'Connection', link: '/apps/removebg/connection' },
           ],
         },
         {
@@ -318,6 +554,24 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Together AI',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/together-ai/actions' },
+            { text: 'Connection', link: '/apps/together-ai/connection' },
+          ],
+        },
+        {
+          text: 'Trello',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/trello/actions' },
+            { text: 'Connection', link: '/apps/trello/connection' },
+          ],
+        },
+        {
           text: 'Twilio',
           collapsible: true,
           collapsed: true,
@@ -347,6 +601,25 @@ export default defineConfig({
           ],
         },
         {
+          text: 'VirtualQ',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/virtualq/actions' },
+            { text: 'Connection', link: '/apps/virtualq/connection' },
+          ],
+        },
+        {
+          text: 'Vtiger CRM',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/vtiger-crm/triggers' },
+            { text: 'Actions', link: '/apps/vtiger-crm/actions' },
+            { text: 'Connection', link: '/apps/vtiger-crm/connection' },
+          ],
+        },
+        {
           text: 'Webhooks',
           collapsible: true,
           collapsed: true,
@@ -362,6 +635,42 @@ export default defineConfig({
           items: [
             { text: 'Triggers', link: '/apps/wordpress/triggers' },
             { text: 'Connection', link: '/apps/wordpress/connection' },
+          ],
+        },
+        {
+          text: 'Xero',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/xero/triggers' },
+            { text: 'Connection', link: '/apps/xero/connection' },
+          ],
+        },
+        {
+          text: 'You Need A Budget',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/you-need-a-budget/triggers' },
+            { text: 'Connection', link: '/apps/you-need-a-budget/connection' },
+          ],
+        },
+        {
+          text: 'Youtube',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Triggers', link: '/apps/youtube/triggers' },
+            { text: 'Connection', link: '/apps/youtube/connection' },
+          ],
+        },
+        {
+          text: 'Zendesk',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Actions', link: '/apps/zendesk/actions' },
+            { text: 'Connection', link: '/apps/zendesk/connection' },
           ],
         },
       ],

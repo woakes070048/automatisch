@@ -6,11 +6,19 @@ Clone main branch of Automatisch.
 git clone git@github.com:automatisch/automatisch.git
 ```
 
-Then, install the dependencies.
+Then, install the dependencies for both backend and web packages separately.
 
 ```bash
 cd automatisch
+
+# Install backend dependencies
+cd packages/backend
 yarn install
+
+# Install web dependencies
+cd packages/web
+yarn install
+
 ```
 
 ## Backend
@@ -35,7 +43,7 @@ yarn db:create
 ```
 
 :::warning
-`yarn db:create` commands expect that you have the `postgres` superuser. If not, you can create a superuser called `postgres` manually or you can create the database manually by checking PostgreSQL-related default values from the [app config](https://github.com/automatisch/automatisch/blob/main/packages/backend/src/config/app.ts).
+`yarn db:create` commands expect that you have the `postgres` superuser. If not, you can create a superuser called `postgres` manually or you can create the database manually by checking PostgreSQL-related default values from the [app config](https://github.com/automatisch/automatisch/blob/main/packages/backend/src/config/app.js).
 :::
 
 Run the database migrations in the backend folder.
@@ -53,12 +61,14 @@ yarn db:seed:user
 Start the main backend server.
 
 ```bash
+cd packages/backend
 yarn dev
 ```
 
 Start the worker server in another terminal tab.
 
 ```bash
+cd packages/backend
 yarn worker
 ```
 
@@ -84,6 +94,7 @@ It will automatically open [http://localhost:3001](http://localhost:3001) in you
 
 ```bash
 cd packages/docs
+yarn install
 yarn dev
 ```
 
